@@ -1,2 +1,4 @@
-# EVotingDApp
-A Web3 E Voting Decentralized app built using Truffle, dotenv, Node and to be deployed on Avalanche Blockchain Network. 
+# E Voting Decentralized App
+A Web3 E Voting Decentralized app built using Truffle, Solidity, Dotenv, Node and to be deployed on Avalanche Blockchain Network. 
+
+
