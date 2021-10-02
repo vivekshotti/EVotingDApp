@@ -1,0 +1,16 @@
+{
+  "name": "advanced-evoting",
+  "version": "1.0.0",
+  "description": "Avalanche based blockahin solution for evoting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.5.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
+  }
+}

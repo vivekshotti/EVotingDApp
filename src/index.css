@@ -1,0 +1,76 @@
+#newElectionButton {
+    margin-top: 20px;
+}
+
+#newElectionButton > div {
+    width: 100px;
+    cursor: pointer;
+}
+
+img {
+    width: 25px;
+    height: 25px;
+}
+
+#formData {
+    margin: 20px 20px;
+}
+
+#formData > input:nth-child(2) {
+    width: 100%;
+}
+
+#formData > div {
+    margin-bottom: 30px;
+}
+
+#formData > div > span {
+    float: left;
+}
+
+#formData > div > span:nth-child(2) {
+    margin-left: 30px;
+}
+
+#newElectionForm {
+    width: 40%;
+    margin: 50px auto;
+    display: none;
+}
+
+#newElectionForm > span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#newElectionForm > span > img {
+    cursor: pointer;
+}
+
+#account {
+    margin-top: 20px
+}
+
+#loader {
+    margin-top: -8px;
+}
+
+#elections {
+    margin-top: 15px;
+}
+
+#electionContainer {
+    width: 80%;
+    margin: 50px auto
+}
+
+#electionContainer > span {
+    position: absolute; 
+    top: 10px; 
+    right: 10px;
+}
+
+#electionContainer > span > img {
+    cursor: pointer;
+}

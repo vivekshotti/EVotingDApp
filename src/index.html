@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Election</title>
+  </head>
+
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/index.css" rel="stylesheet">
+
+  <body>
+    <!-- This component will be used to create a new election -->
+    <center id="newElectionButton">
+      <div onclick="toggleNewElectionForm()">
+        <img src="https://img.icons8.com/color/48/000000/plus-math.png"/><br>
+
+        <font size = 2>
+          <b>New Election</b>
+        </font>
+      </div>
+    </center>
+
+    <!-- This component contains form to create election -->
+    <div id="newElectionForm" class="card">
+      <!-- Cross image to hide form -->
+      <span>
+        <img onclick="toggleNewElectionForm()" src="https://img.icons8.com/emoji/48/000000/cross-mark-emoji.png"/>
+      </span>
+
+      <!-- This form will take details of new election and submit a transaction to the network -->
+      <form id="formData" onsubmit="submitNewElection(); return false;">
+        <font size = 2><b>Election title</b></font><br>
+        <input name="details[]" placeholder="Name your election" required><br><br>
+
+        <font size = 2><b>Election description</b></font><br>
+        <input name="details[]" placeholder="Describe something about this election" required style="width: 80%;"><br><br>
+
+        <div>
+          <span>
+            <font size = 2><b>1st Candidate name</b></font><br>
+            <input name="candidates[]" placeholder="Candidate name" required>
+          </span>
+
+          <span>
+            <font size = 2><b>2nd Candidate name</b></font><br>
+            <input name="candidates[]" placeholder="Candidate name" required>
+          </span>
+        </div>
+
+        <br><br>
+
+        <input type="submit" class="btn btn-primary">
+      </form>
+    </div>
+
+    <!-- List of elections on the network will appear here -->
+    <div id="electionContainer" class="card">
+      <!-- Account address will be rendered here -->
+      <center id="account"></center>
+
+      <!-- Loading will appear until blockchain data is loaded -->
+      <center id='loader'>
+        <span class="spinner-border text-primary"></span>
+      </center>
+
+      <!-- Button to synchronize the list of elections on the network -->
+      <span>
+        <img onclick="ElectionData.get()" src="https://img.icons8.com/color/50/000000/synchronize.png"/>
+      </span>
+
+      <br><br>
+
+      <!-- Election data will appear here -->
+      <div id="elections" class="container">
+        <table class="table table-bordered">
+          <tr>
+            <td><b>ID</b></td>
+            <td><b>Name</b></td>
+            <td><b>Description</b></td>
+            <td><b>Vote</b></td>
+          </tr>
+
+          <tbody id="electionDetails">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+
+  <!--jQuery CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  <!--web3 module for interacting with blockchain-->
+  <script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.js"></script>
+
+  <!--Truffle Contract module for interacting with smart contract in javascript-->
+  <script src="https://rajranjan0608.github.io/ethereum-electionVoting/src/contract.js"></script>
+
+  <!--Our custom javascript code for interaction-->
+  <script type="module" language="javascript" src="/loadBlockchain.js"></script>
+  <script type="module" language="javascript" src="/loadElections.js"></script>
+  <script type="text/javascript" language="javascript" src="/index.js"></script>
+</html>
