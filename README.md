@@ -43,10 +43,12 @@ Replicating this project in your system, you would need to install  -->
     <img width="50%" src="solsDeployed.JPG">
 </p>
 
+### ➤ General flow of the Website :
 <p align="center" width="100%">
     <img width="80%" src="flow.png">
 </p>
 
+### ➤ Up & Running on localhost using Fuji TestNet and AVAX Faucets :
 <p align="center" width="100%">
     <img width="80%" src="final.gif">
 </p>
