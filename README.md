@@ -4,7 +4,7 @@
     <img width="20%" src="logo.png">
 </p> -->
 
-<img align="right" width="20%" src="logo.png"> 
+<img align="right" width="20%" src="otherAssets/logo.png"> 
 A Web3 E Voting Decentralized app built using Truffle, Solidity, Dotenv, Node and to be deployed on Avalanche Blockchain Network. 
 <!-- 
 ### ➤ Project structure :
@@ -40,17 +40,17 @@ Replicating this project in your system, you would need to install  -->
 ### ➤ Deployment of the Smart Contracts :
 
 <p align="center" width="100%">
-    <img width="50%" src="solsDeployed.JPG">
+    <img width="50%" src="otherAssets/solsDeployed.JPG">
 </p>
 
 ### ➤ General flow of the Website :
 <p align="center" width="100%">
-    <img width="80%" src="flow.png">
+    <img width="80%" src="otherAssets/flow.png">
 </p>
 
 ### ➤ Up & Running on localhost using Fuji TestNet and AVAX Faucets :
 <p align="center" width="100%">
-    <img width="80%" src="final.gif">
+    <img width="80%" src="otherAssets/final.gif">
 </p>
 
 <p align="center">
