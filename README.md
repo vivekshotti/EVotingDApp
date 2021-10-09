@@ -50,26 +50,44 @@ To run this project on your local environment, you will have to:
   ```
 - Lastly install Trufflesuite or Ganache GUI using the link [here](https://www.trufflesuite.com/ganache).
 
-### ➤ Deployment of Smart Contracts :
+### ➤ Getting Started with Deployment:
 - ***STEP 1*** : Open Ganache GUI & select Quickstart Ethereum. This creates you a dummy wallet with faucet (dummy) ethereum that helps you get your Smart Contracts deployed without the need of you to using Actual realtime ethereum. <br />
+
+  <img align="center" width="50%" src="otherAssets/s1.JPG"> 
+  
 - ***STEP 2*** : Go to settings using the icon on the top right. Then add the path of your **truffle-config.js** that was created when you hit the command truffle init. Then it save and restart <br/>
+
+  <img align="center" width="50%" src="otherAssets/s2.JPG">
+  
 - ***STEP 3*** : Open a linux based terminal and navigate to the root directory of where your project / truffle-config.js exists. Then run the command:
    ```
    truffle migrate --reset 
    ```
+   <img align="center" width="70%" src="otherAssets/s3.1.JPG">
+   
    This command starts to compile your smart contracts first and deploy them next.
    If all goes well, except for compilation warnings that can be ignored, you will recieve this output:
    
+   <img align="center" width="70%" src="otherAssets/s3.2.JPG">
+   
    The same can be verified by seeing the Ganache GUI, where the exact ETH amount is deducted from your first wallet:
    
-   A further summary of the transactions occured and faucets (dummy-Eth) spent in deploying your contracts can be seen in the **"Transactions"** section of the Ganache GUI:<br/>
+   <img align="center" width="70%" src="otherAssets/s3.3.JPG">
+   
+   A further summary of the transactions occured and faucets (dummy-Eth) spent in deploying your contracts can be seen in the **"Transactions"** section of the Ganache GUI:
+   
+   <img align="center" width="70%" src="otherAssets/s3.4.JPG">
    
 - ***STEP 4*** : Now that the smart contracts are deployed successfully, we need to now start to interact with the deployed contracts. To do that its time for deploying our frontend on our localhost server at 3000. Do not get confused, our smart contracts are up and running on the 7545 port, whereas our frontend will now be hosted on our 3000 port. To do this, we will first have to setup our metamask account and change the existing RPC for localhost from 8545 to 7545, as all our smart contracts on are deployed on the 7545 port. Then navigate to your **SRC** directory thast exists in your root directory and run the command:
    ```
    node server.js
    ```
+   <img align="center" width="70%" src="otherAssets/s4.1.JPG">
+   
    Then go to your browser where metamask has been setup and navigate to **localhost:3000**.
    And CONGRATULATIONS! Your own EVOTING DAPP is Up and Running!
+   
+   <img align="center" width="70%" src="otherAssets/s4.2.JPG">
 
 ### ➤ General flow of the Website :
 <p align="center" width="100%">
