@@ -2,9 +2,9 @@
 
 # EVOTING-DAPP
 A Web3 E Voting Decentralized app built using Truffle, Ganache, Solidity, Dotenv, Node and to be deployed on Avalanche Blockchain Network. <br/>
-
+<!-- 
 ![lastcom](https://img.shields.io/github/last-commit/Vivek-Hotti/EVotingDApp) ![stars](https://img.shields.io/github/stars/Vivek-Hotti/EVotingDApp)
-![forks](https://img.shields.io/github/forks/Vivek-Hotti/EVotingDApp)
+![forks](https://img.shields.io/github/forks/Vivek-Hotti/EVotingDApp) -->
 
 <!-- <img align="right" width="20%" src="otherAssets/logo.png">  -->
 ### ➤ Project structure :
